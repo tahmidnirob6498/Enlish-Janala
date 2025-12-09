@@ -169,7 +169,9 @@ const removeDisplay=()=>{
   document.getElementById("faq").classList.add("hidden")
   document.getElementById("navbar").classList.add("hidden")
   document.getElementById("banner").classList.remove("hidden")
-  
+   const banner=document.getElementById("header")
+  banner.classList.remove("sticky")
+  banner.classList.remove("top-0")
 
 }
 
