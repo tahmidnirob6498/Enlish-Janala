@@ -1,3 +1,6 @@
+
+
+
 function displayLevel(){
     fetch("https://openapi.programming-hero.com/api/levels/all")
     .then(res=>res.json())
@@ -181,18 +184,17 @@ const removeDisplay=()=>{
 const formFillup=()=>{
   const inputName=document.getElementById("inputName")
   const inputPass=document.getElementById("inputPass")
- if(inputName.value.length===0){
-  alert("Please input a name")
+ if(inputName.value !=="Tahmid's Maya"){
+  alert("Please input a correct name")
  }
- else{
-
- }
- if(inputPass.value!=='123456'){
+else if(inputPass.value!=='69269'){
     alert("Please input a valid password")
  }
  else{
-   activeDisplay()
+  activeDisplay()
+   
  }
+
 
 
 
