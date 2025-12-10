@@ -23,15 +23,15 @@
 <body>
   <header class="mb-28" id="header">
     <!-- navbar -->
-    <div class="navbar px-10 bg-base-100 shadow-sm hidden" id="navbar">
+    <div class="navbar px-10 bg-base-100 shadow-sm hidden sm:flex-row flex-col " id="navbar">
   <div class="flex-1">
     <a class="btn btn-ghost text-xl">English<img src="./assets/logo.png" alt="">Janala</a>
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1 flex gap-3">
-      <li class="btn text-blue-800"><a href="#faq"> <img src="./assets/fa-circle-question.png" alt=""> FAQ</a></li>
-      <li class="btn text-blue-800"><a href="#vocabularies"><img src="./assets/fa-book-open.png" alt="">Learn</a></li>
-     <li class="btn text-blue-800" onclick="removeDisplay()"><a><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</a></li>
+      <li class=" text-blue-800"><a href="#faq"> <img src="./assets/fa-circle-question.png" alt=""> FAQ</a></li>
+      <li class=" text-blue-800"><a href="#vocabularies"><img src="./assets/fa-book-open.png" alt="">Learn</a></li>
+     <li class=" text-blue-800" onclick="removeDisplay()"><a><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</a></li>
       <li>
       </li>
     </ul>
@@ -48,16 +48,16 @@
       <div>
         <div class="py-5">
     <h1 class="font-bold text-4xl py-5"> <span class="text-sky-500">English</span> is Easy</h1>
-    <p class="font-medium text-xl w-5/6 xl:w-full">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+    <p class="font-medium text-xl w-full md:w-5/6 xl:w-full">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
 </div>
       </div>
     <div class="card w-full max-w-sm shrink-0 ">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label">Name</label>
-          <input type="text" class="input required" id="inputName" placeholder="Enter Your Name" />
+          <input type="text" value="Tahmid Nirob" class="input required" id="inputName" placeholder="Enter Your Name" />
           <label class="label">Password</label>
-          <input type="password" class="input required" id="inputPass" placeholder="Password" />
+          <input type="password" value="123456" class="input required" id="inputPass" placeholder="Password" />
           <div><a class="link link-hover">Forgot password?</a></div>
           <button class="btn bg-blue-700 text-white mt-4 w-1/2" onclick="formFillup()">Get Satrted</button>
         </fieldset>
@@ -70,10 +70,10 @@
  </header>  
 <main>
   <!-- Lesson Section -->
-  <section id="vocabularies" class="my-32 hidden">
-    <h1 class="font-bold text-4xl text-center mb-7"><span class="text-sky-500">Let's</span> Learn Vocabularies</h1>
-    <div id="catagories" class="mb-4"></div>
-    <div id="vocabularyPart" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+  <section id="vocabularies" class=" hidden">
+    <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-7"><span class="text-sky-500">Let's</span> Learn Vocabularies</h1>
+    <div id="catagories" class="mb-4 flex-wrap"></div>
+    <div id="vocabularyPart" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 "></div>
     <!-- <div class="flex flex-col items-center justify-center my-10 w-full bg-slate-100">
       <i class="fa-solid fa-triangle-exclamation text-5xl mt-2"></i>
       <p class="text-2xl my-2">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
@@ -99,8 +99,8 @@
     </div> -->
   </section>
   <!-- FAQ Section -->
-  <section id="faq" class="my-32 hidden">
-    <h1 class="font-bold text-4xl py-5 text-center mt-48"><span class="text-sky-500">Frequently</span>Asked Questions</h1>
+  <section id="faq" class="my-16 md:my-20 lg:my-32 hidden">
+    <h1 class="font-bold text-2xl md:text-3xl lg::text-4xl  text-center  mb-14 md:mb-24"><span class="text-sky-500 ">Frequently</span> Asked Questions</h1>
     <div>
       <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
   <div class="collapse-title font-semibold">1.The difference between var, let, and const</div>
@@ -135,7 +135,7 @@
   
   <!-- Open the modal using ID.showModal() method -->
 <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
-<dialog id="vocabulary_details" class="modal">
+<dialog id="vocabulary_details" class="modal ">
   <!-- <div class="modal-box !bg-none">
    <div class="card bg-black text-white w-96 shadow-sm">
   <div class="card-body">

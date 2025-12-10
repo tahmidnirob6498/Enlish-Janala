@@ -42,8 +42,8 @@ const vDetailsSet=(info)=>{
     const detailButton=document.getElementById("vocabulary_details")
   detailButton.showModal()
   detailButton.innerHTML=`
-    <div class="modal-box !bg-none">
-   <div class="card bg-black text-white w-96 shadow-sm">
+    <div class="">
+   <div class="card bg-black text-white w-96 shadow-sm mx-auto">
   <div class="card-body">
     <h2 class="card-title">${info.word} (${info.pronunciation})</h2>
     <p>
@@ -83,7 +83,7 @@ function emptyLesson(){
     <div class="flex flex-col items-center justify-center my-10 col-span-4 bg-slate-100 py-10">
       
       <p class=" my-2 text-gray-500">আপনি এখনো কোন Lesson Select করেন ন</p>
-      <p class="text-4xl font-medium mb-2">একটি Lesson Select করুন।</p>
+      <p class=" text-2xl md:text-3xl lg:text-4xl font-medium mb-2">একটি Lesson Select করুন।</p>
     </div> 
   
   `
@@ -109,14 +109,15 @@ vocabularies.forEach(vocabulary=>{
   
     
     const div=document.createElement("div")
+   
     div.innerHTML=`
         
-  <div class="card bg-base-100 shadow-sm">
+  <div class="card bg-base-100 shadow-sm h-full">
   <div class="card-body">
     <div class=" flex flex-col justify-center items-center">
-    <h2 class="card-title font-bold text-2xl">${vocabulary.word}</h2>
-    <p class="font-semibold text-xl py-4">Meaning /Pronounciation</p>
-    <p class="text-2xl font-semibold text-[#18181B]">"${vocabulary.meaning}/${vocabulary.pronunciation}"</p></div>
+    <h2 class="card-title font-bold text-xl">${vocabulary.word}</h2>
+    <p class="font-semibold  text-[18px] py-4">Meaning /Pronounciation</p>
+    <p class="text-xl font-semibold text-[#18181B]">"${vocabulary.meaning}/${vocabulary.pronunciation}"</p></div>
     <div class=" flex flex-row-reverse justify-between ">
       <i class="fa-solid fa-play"></i>
       <i class="fa-solid fa-circle-info" onclick="vDetails(${vocabulary.id})"></i>
@@ -162,6 +163,7 @@ const activeDisplay=()=>{
   const banner=document.getElementById("header")
   banner.classList.add("sticky")
   banner.classList.add("top-0")
+  banner.classList.add("z-50")
 
 }
 const removeDisplay=()=>{
