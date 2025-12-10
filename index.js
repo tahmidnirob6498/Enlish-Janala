@@ -98,8 +98,8 @@ const getVocabularies=(vocabularies)=>{
       
    <div class="flex flex-col items-center justify-center my-10 col-span-4 bg-slate-100 py-3">
       <i class="fa-solid fa-triangle-exclamation text-5xl mt-2"></i>
-      <p class="text-2xl my-2">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
-      <p class="text-2xl mb-2">নেক্সট Lesson এ যান</p>
+      <p class="text-xl md:text-2xl my-2 text-center">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+      <p class="text-2xl mb-2 text-center">নেক্সট Lesson এ যান</p>
     </div> 
       
       `
